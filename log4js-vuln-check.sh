@@ -1,6 +1,6 @@
 #/bin/bash
 
-#log4js-vuln-check
+#log4js-vuln-check by Robin Valere For Kaufman Rossin
 #This script is used to perform a fast check if your server is possibly affected by CVE-2021-44228 (the log4j vulnerability). 
 #It does not give a 100% proof, that you are not vulnerable, but it gives a hint if it is possible, that you could be vulnerable.
 #- Scans files for occurrences of log4j
