@@ -1,4 +1,20 @@
 #/bin/bash
+echo 'Installing Denpencies'
+sudo apt-get update && sudo apt-get install lsof unzip locate
+echo 'Updating File Index Database'
+sudo updatedb
+echo 'Finding Anything With Java In Name'
+sudo find / -name "java"
+echo 'Finding Anything With Elastics In Name'
+sudo find / -name "elastics"
+echo 'Server Bound Listening Port'
+sudo lsof -i -P -n | grep LISTEN
+echo 'Running Vulnerability Tester'
+sudo wget https://raw.githubusercontent.com/rubo77/log4j_checker_beta/main/log4j_checker_beta.sh -q -O - |bash
+
+
+
+#/bin/bash
 
 #log4js-vuln-check
 #This script is used to perform a fast check if your server is possibly affected by CVE-2021-44228 (the log4j vulnerability). 
@@ -9,22 +25,47 @@
 #- Analyzes JAR/WAR/EAR files
 #- Option of checking hashes of .class files in archives
 
-echo 'Installing Denpencies'
+echo '################# Starting log4js-vuln-check #################'
+echo '################# Installing Denpencies #################'
 sudo apt-get update && sudo apt-get install lsof unzip locate
 
-echo 'Updating File Index Database'
+echo '\n'
+echo '\n'
+echo '\n'
+
+echo '#################Updating File Index Database #################'
 sudo updatedb
 
-echo 'Finding Anything With Java In Name'
+echo '\n'
+echo '\n'
+echo '\n'
+
+echo '#################Finding Anything With Java In Name #################'
 sudo find / -name "java"
 
-echo 'Finding Anything With Elastics In Name'
+echo '\n'
+echo '\n'
+echo '\n'
+
+echo '#################Finding Anything With Elastics In Name #################'
 sudo find / -name "elastics"
+
+echo '\n'
+echo '\n'
+echo '\n'
 
 echo 'Server Bound Listening Port'
 sudo lsof -i -P -n | grep LISTEN
 
+echo '\n'
+echo '\n'
+echo '\n'
+
 echo 'Running Vulnerability Tester'
 sudo wget https://raw.githubusercontent.com/rubo77/log4j_checker_beta/main/log4j_checker_beta.sh -q -O - |bash
+
+echo '\n'
+echo '\n'
+echo '\n'
 
 echo 'Done'
