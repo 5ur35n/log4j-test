@@ -21,6 +21,9 @@ sudo find / -name "java"
 echo '#################Finding Anything With Elastics In Name #################'
 sudo find / -name "elastics"
 
+echo '#################Finding Anything With Elastics In Name #################'
+sudo find / -name "solr"
+
 echo 'Server Bound Listening Port'
 sudo lsof -i -P -n | grep LISTEN
 
