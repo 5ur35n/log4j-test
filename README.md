@@ -9,4 +9,4 @@ It does not give a 100% proof, that you are not vulnerable, but it gives a hint 
  - Analyzes JAR/WAR/EAR files
  - Option of checking hashes of .class files in archives
 
-Run: 'wget https://raw.githubusercontent.com/5ur35n/log4j-test/main/log4js-vuln-check.sh -q -O - | sudo bash'
+Run: 'wget https://raw.githubusercontent.com/5ur35n/log4j-test/main/log4js-vuln-check.sh -q -O - |bash'
