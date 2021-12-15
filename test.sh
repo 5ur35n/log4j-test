@@ -9,9 +9,9 @@
 #- Option of checking hashes of .class files in archives
 
 echo '################# Starting log4js-vuln-check #################'
-echo '################# Installing Denpencies #################'
 
-sudo apt-get update && sudo apt-get install lsof unzip locate
+#echo '################# Installing Denpencies #################'
+#sudo apt-get update && sudo apt-get install lsof unzip locate
 
 echo '################# Updating File Index Database #################'
 sudo updatedb
