@@ -29,7 +29,6 @@ echo '################# Server Bound Listening Port #################'
 sudo lsof -i -P -n | grep LISTEN
 
 echo '################# Running Vulnerability Tester #################'
-sudo wget https://raw.githubusercontent.com/rubo77/log4j_checker_beta/main/log4j_checker_beta.sh -q -O - |bash
 
 # regular expression, for which packages to scan for:
 PACKAGES='solr\|elastic\|log4j'
